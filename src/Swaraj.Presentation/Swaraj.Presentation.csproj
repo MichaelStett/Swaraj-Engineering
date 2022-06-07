@@ -1,0 +1,31 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+    <UserSecretsId>aspnet-Swaraj.Presentation-0D3C02CD-5D69-4B98-A703-615DE47CF7A0</UserSecretsId>
+    <DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
+    <Platforms>AnyCPU;x64</Platforms>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <DocumentationFile>C:\Users\Michael\source\repos\Swaraj\Swaraj.Presentation\Swaraj.Presentation.xml</DocumentationFile>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Ardalis.ApiEndpoints" Version="3.1.0" />
+    <PackageReference Include="ChartJs.Blazor.Fork" Version="2.0.2" />
+    <PackageReference Include="Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore" Version="5.0.5" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="5.0.5" />
+    <PackageReference Include="Microsoft.Extensions.Http" Version="5.0.0" />
+    <PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" Version="1.10.13" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="5.6.3" />
+    <PackageReference Include="Swashbuckle.AspNetCore.Annotations" Version="6.1.4" />
+    <PackageReference Include="Swashbuckle.AspNetCore.Filters" Version="7.0.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Swaraj.Application\Swaraj.Application.csproj" />
+    <ProjectReference Include="..\Swaraj.Infrastructure\Swaraj.Infrastructure.csproj" />
+  </ItemGroup>
+
+</Project>

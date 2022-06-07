@@ -1,0 +1,23 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+    <Platforms>AnyCPU;x64</Platforms>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Ardalis.ApiEndpoints" Version="3.1.0" />
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="5.0.1" />
+    <PackageReference Include="Swashbuckle.AspNetCore.Annotations" Version="6.1.4" />
+    <PackageReference Include="Swashbuckle.AspNetCore.Filters" Version="7.0.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Swaraj.Application\Swaraj.Application.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Validators\" />
+  </ItemGroup>
+
+</Project>
